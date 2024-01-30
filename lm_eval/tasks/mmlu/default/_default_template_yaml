@@ -4,7 +4,7 @@ fewshot_split: dev
 fewshot_config:
   sampler: first_n
 output_type: multiple_choice
-doc_to_text: "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:"
+doc_to_text: "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions. USER: {{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAssistant:"
 doc_to_choice: ["A", "B", "C", "D"]
 doc_to_target: answer
 metric_list:
